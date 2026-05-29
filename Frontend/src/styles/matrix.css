@@ -1,0 +1,117 @@
+.matrix-section { margin-bottom: 24px; }
+
+.matrix-label {
+  font-size: 11px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-family: var(--mono);
+  margin-bottom: 10px;
+}
+
+.matrix-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: auto;
+  padding: 16px;
+}
+
+table.matrix {
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+.matrix th {
+  font-size: 11px;
+  color: var(--text3);
+  font-family: var(--mono);
+  font-weight: 400;
+  padding: 4px 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.matrix th.row-header { text-align: right; color: var(--accent); }
+
+.matrix td { padding: 3px; }
+
+.matrix input {
+  width: 64px;
+  height: 36px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 13px;
+  font-family: var(--mono);
+  text-align: center;
+  outline: none;
+  transition: all 0.15s;
+}
+
+.matrix input:focus {
+  border-color: var(--accent);
+  background: var(--surface3);
+  box-shadow: 0 0 0 3px rgba(0,229,192,0.08);
+}
+
+.matrix input.supply {
+  background: rgba(0,229,192,0.05);
+  border-color: rgba(0,229,192,0.2);
+  color: var(--accent);
+}
+
+.matrix input.demand {
+  background: rgba(196,98,45,0.05);
+  border-color: rgba(196,98,45,0.2);
+  color: var(--accent2);
+}
+
+.matrix .label-input {
+  width: 90px;
+  height: 28px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--text3);
+  font-size: 11px;
+  font-family: var(--mono);
+  text-align: center;
+  outline: none;
+  transition: all 0.15s;
+}
+
+.matrix .label-input:hover {
+  border-color: var(--border2);
+}
+
+.matrix .label-input:focus {
+  border-color: var(--accent);
+  color: var(--text);
+  background: var(--surface3);
+}
+
+.matrix .label-input.row-label {
+  text-align: right;
+  color: var(--accent);
+}
+
+.matrix-display td {
+  width: 64px;
+  height: 36px;
+  text-align: center;
+  font-size: 13px;
+  font-family: var(--mono);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text2);
+  padding: 4px 8px;
+}
+
+.matrix-display td.highlighted {
+  background: rgba(0,229,192,0.12);
+  color: var(--accent);
+  font-weight: 700;
+}
