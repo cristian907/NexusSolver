@@ -1,0 +1,5 @@
+packages:
+  - 'Frontend/problem-solver-frontend'
+
+allowBuilds:
+  core-js: true
